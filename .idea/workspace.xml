@@ -4,11 +4,60 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1bfa504a-f59b-4520-a7c2-bfca4312a077" name="Changes" comment="" />
+    <list default="true" id="1bfa504a-f59b-4520-a7c2-bfca4312a077" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/app/components/assets/edit/assetEdit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/app/components/assets/edit/assetEditController.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/app/components/assets/history/assetHistory.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/app/components/assets/history/assetHistoryController.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/app/components/assets/list/assetList.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/app/components/assets/list/assetListController.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/app/components/users/assets/userAssets.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/app/components/users/assets/userAssetsController.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/app/components/users/edit/userEdit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/app/components/users/edit/userEditController.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/app/components/users/list/userList.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/app/components/users/list/userListController.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/app/config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/app/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/app/services/assetServices.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/app/services/assignmentServices.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/app/services/categoryServices.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/app/services/userServices.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/background.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/node_modules/.package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="30071470-6f28-430c-a3f9-7b5b7785f4dc" />
+        <option name="url" value="https://github.com/Sumson90/EquipRental.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -24,6 +73,7 @@
     </option>
   </component>
   <component name="ProjectId" id="2OKjSSd7MDaa5kLG18c4sCfyi2J" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -32,6 +82,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -58,11 +109,25 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1681316174053</updated>
-      <workItem from="1681316179706" duration="344000" />
+      <workItem from="1681316179706" duration="1344000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="LAST_COMMIT_MESSAGE" value="" />
   </component>
 </project>
