@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1bfa504a-f59b-4520-a7c2-bfca4312a077" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="1bfa504a-f59b-4520-a7c2-bfca4312a077" name="Changes" comment="01 Prepared main page and added configurations">
       <change afterPath="$PROJECT_DIR$/src/main/resources/static/app/components/assets/edit/assetEdit.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/resources/static/app/components/assets/edit/assetEditController.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/resources/static/app/components/assets/history/assetHistory.html" afterDir="false" />
@@ -19,19 +17,10 @@
       <change afterPath="$PROJECT_DIR$/src/main/resources/static/app/components/users/edit/userEditController.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/resources/static/app/components/users/list/userList.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/resources/static/app/components/users/list/userListController.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/app/config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/app/index.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/resources/static/app/services/assetServices.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/resources/static/app/services/assignmentServices.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/resources/static/app/services/categoryServices.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/resources/static/app/services/userServices.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/background.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/node_modules/.package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,6 +48,9 @@
       </UrlAndAccount>
     </option>
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -80,6 +72,10 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -109,8 +105,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1681316174053</updated>
-      <workItem from="1681316179706" duration="1344000" />
+      <workItem from="1681316179706" duration="1441000" />
     </task>
+    <task id="LOCAL-00001" summary="01 Prepared main page and added configurations">
+      <created>1681317566983</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1681317566983</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -128,6 +132,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="LAST_COMMIT_MESSAGE" value="" />
+    <MESSAGE value="01 Prepared main page and added configurations" />
+    <option name="LAST_COMMIT_MESSAGE" value="01 Prepared main page and added configurations" />
   </component>
 </project>
