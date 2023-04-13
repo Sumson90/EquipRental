@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1bfa504a-f59b-4520-a7c2-bfca4312a077" name="Changes" comment="01 Prepared main page and added configurations">
+    <list default="true" id="1bfa504a-f59b-4520-a7c2-bfca4312a077" name="Changes" comment="02 Added Services">
       <change afterPath="$PROJECT_DIR$/src/main/resources/static/app/components/assets/edit/assetEdit.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/resources/static/app/components/assets/edit/assetEditController.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/resources/static/app/components/assets/history/assetHistory.html" afterDir="false" />
@@ -17,10 +17,6 @@
       <change afterPath="$PROJECT_DIR$/src/main/resources/static/app/components/users/edit/userEditController.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/resources/static/app/components/users/list/userList.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/resources/static/app/components/users/list/userListController.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/app/services/assetServices.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/app/services/assignmentServices.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/app/services/categoryServices.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/app/services/userServices.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,11 +31,11 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;
   }
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
@@ -85,6 +81,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "spring.configuration.checksum": "17f39e53a70cdccb2cba085db5fb4b30",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -106,6 +103,7 @@
       <option name="presentableId" value="Default" />
       <updated>1681316174053</updated>
       <workItem from="1681316179706" duration="1441000" />
+      <workItem from="1681405552818" duration="383000" />
     </task>
     <task id="LOCAL-00001" summary="01 Prepared main page and added configurations">
       <created>1681317566983</created>
@@ -114,7 +112,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681317566983</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="02 Added Services">
+      <created>1681405731711</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1681405731711</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -133,6 +138,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="01 Prepared main page and added configurations" />
-    <option name="LAST_COMMIT_MESSAGE" value="01 Prepared main page and added configurations" />
+    <MESSAGE value="02 Added Services" />
+    <option name="LAST_COMMIT_MESSAGE" value="02 Added Services" />
   </component>
 </project>
