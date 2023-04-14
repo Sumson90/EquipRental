@@ -4,24 +4,33 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1bfa504a-f59b-4520-a7c2-bfca4312a077" name="Changes" comment="02 Added Services">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/app/components/assets/edit/assetEdit.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/app/components/assets/edit/assetEditController.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/app/components/assets/history/assetHistory.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/app/components/assets/history/assetHistoryController.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/app/components/assets/list/assetList.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/app/components/assets/list/assetListController.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/app/components/users/assets/userAssets.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/app/components/users/assets/userAssetsController.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/app/components/users/edit/userEdit.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/app/components/users/edit/userEditController.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/app/components/users/list/userList.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/app/components/users/list/userListController.js" afterDir="false" />
+    <list default="true" id="1bfa504a-f59b-4520-a7c2-bfca4312a077" name="Changes" comment="03 Added Assets component">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/equipRental/user/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/equipRental/user/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/equipRental/user/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/equipRental/user/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/equipRental/user/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/equipRental/user/dto/UserDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/import.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/javastart/equipy/EquipyApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/equipRental/EquipRentalApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -76,6 +85,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/tomsu/Desktop/New folder (8)/EquipRental/src/main/resources/static/app/components",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -85,9 +95,37 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\tomsu\Desktop\New folder (8)\EquipRental\src\main\resources\static\app\components" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\tomsu\Desktop\New folder (8)\EquipRental\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.EquipRentalApplication">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="equipRental" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="equipRental" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EquipRentalApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="equipRental" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="pl.equipRental.EquipRentalApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="EquipyApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="equipy" />
+      <module name="equipRental" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="pl.javastart.equipy.EquipyApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -103,7 +141,9 @@
       <option name="presentableId" value="Default" />
       <updated>1681316174053</updated>
       <workItem from="1681316179706" duration="1441000" />
-      <workItem from="1681405552818" duration="383000" />
+      <workItem from="1681405552818" duration="2251000" />
+      <workItem from="1681461780099" duration="623000" />
+      <workItem from="1681489985961" duration="4218000" />
     </task>
     <task id="LOCAL-00001" summary="01 Prepared main page and added configurations">
       <created>1681317566983</created>
@@ -119,7 +159,21 @@
       <option name="project" value="LOCAL" />
       <updated>1681405731711</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="02 Added Users component">
+      <created>1681406016863</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1681406016863</updated>
+    </task>
+    <task id="LOCAL-00004" summary="03 Added Assets component">
+      <created>1681406161500</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1681406161500</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -139,6 +193,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="01 Prepared main page and added configurations" />
     <MESSAGE value="02 Added Services" />
-    <option name="LAST_COMMIT_MESSAGE" value="02 Added Services" />
+    <MESSAGE value="02 Added Users component" />
+    <MESSAGE value="03 Added Assets component" />
+    <option name="LAST_COMMIT_MESSAGE" value="03 Added Assets component" />
   </component>
 </project>
