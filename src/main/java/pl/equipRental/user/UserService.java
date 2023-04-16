@@ -34,5 +34,20 @@ public class UserService {
 
     }
 
+    Optional<UserDto> findById(Long id) {
+        return userRepository.findById(id).map(UserMapper::toDto);
+    }
+
+    UserDto update(UserDto user) {
+        Optional<User> userByPesel = userRepository.findByPesel(user.getPesel());
+        userByPesel.ifPresent(u -> {
+            if (!u.getId().equals(user.getId()))
+                throw new DuplicatePeselException("Użytkownik z takim peselem już istnieje.");
+        });
+        User userEntity = UserMapper.toEntity(user);
+        User savedUser = userRepository.save(userEntity);
+        return UserMapper.toDto(savedUser);
+    }
+
 
 }
