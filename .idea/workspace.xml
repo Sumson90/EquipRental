@@ -4,11 +4,56 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1bfa504a-f59b-4520-a7c2-bfca4312a077" name="Changes" comment="" />
+    <list default="true" id="1bfa504a-f59b-4520-a7c2-bfca4312a077" name="Changes" comment="07 Created Asset entity, Dto, Mapper, Service and controller with findAll method. Added example data in import file.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/equipRental/category/Category.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/equipRental/category/CategoryRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/equipRental/assets/AssetDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/equipRental/assets/AssetDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/equipRental/assets/AssetMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/equipRental/assets/AssetMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/equipRental/assets/AssetRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/equipRental/assets/AssetRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/equipRental/user/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/equipRental/user/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/equipRental/user/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/equipRental/user/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/equipRental/user/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/equipRental/user/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/equipRental/user/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/equipRental/user/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/equipRental/user/dto/UserDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/equipRental/user/dto/UserDto.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="30071470-6f28-430c-a3f9-7b5b7785f4dc" />
+        <option name="url" value="https://github.com/Sumson90/EquipRental.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -24,26 +69,53 @@
     </option>
   </component>
   <component name="ProjectId" id="2OKjSSd7MDaa5kLG18c4sCfyi2J" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/tomsu/Desktop/New folder (8)/EquipRental/src/main/resources/static/app/components&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;eb9e03b941b85015ea926e69a7192ed4&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
-  <component name="RunManager">
+}</component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="pl.equipRental.assets" />
+      <recent name="pl.equipRental.user" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\tomsu\Desktop\New folder (8)\EquipRental\src\main\resources\static\app\components" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\tomsu\Desktop\New folder (8)\EquipRental\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.EquipRentalApplication">
+    <configuration name="EquipRentalApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="equipRental" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="pl.equipRental.EquipRentalApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="EquipyApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="equipy" />
+      <module name="equipRental" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="pl.javastart.equipy.EquipyApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -58,11 +130,97 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1681316174053</updated>
-      <workItem from="1681316179706" duration="344000" />
+      <workItem from="1681316179706" duration="1441000" />
+      <workItem from="1681405552818" duration="2251000" />
+      <workItem from="1681461780099" duration="623000" />
+      <workItem from="1681489985961" duration="4656000" />
+      <workItem from="1681556560844" duration="4078000" />
+      <workItem from="1681635273196" duration="4239000" />
+      <workItem from="1681746856084" duration="3610000" />
+      <workItem from="1681806816335" duration="10385000" />
     </task>
+    <task id="LOCAL-00001" summary="01 Prepared main page and added configurations">
+      <created>1681317566983</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1681317566983</updated>
+    </task>
+    <task id="LOCAL-00002" summary="02 Added Services">
+      <created>1681405731711</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1681405731711</updated>
+    </task>
+    <task id="LOCAL-00003" summary="02 Added Users component">
+      <created>1681406016863</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1681406016863</updated>
+    </task>
+    <task id="LOCAL-00004" summary="03 Added Assets component">
+      <created>1681406161500</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1681406161500</updated>
+    </task>
+    <task id="LOCAL-00005" summary="04 Created User entity, repository, mapper, service, controller added import with data example">
+      <created>1681494294896</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1681494294896</updated>
+    </task>
+    <task id="LOCAL-00006" summary="05 Added saving method in service and end point in controller. Created exceptions package with GlobalExceptionHandler.">
+      <created>1681560041222</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1681560041222</updated>
+    </task>
+    <task id="LOCAL-00007" summary="06 Added editing method in service and end point in controller.">
+      <created>1681637655364</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1681637655365</updated>
+    </task>
+    <task id="LOCAL-00008" summary="07 Created Asset entity, Dto, Mapper, Service and controller with findAll method. Added example data in import file.">
+      <created>1681749803757</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1681749803757</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="01 Prepared main page and added configurations" />
+    <MESSAGE value="02 Added Services" />
+    <MESSAGE value="02 Added Users component" />
+    <MESSAGE value="03 Added Assets component" />
+    <MESSAGE value="04 Created User entity, repository, mapper, service, controller added import with data example" />
+    <MESSAGE value="05 Added saving method in service and end point in controller. Created exceptions package with GlobalExceptionHandler." />
+    <MESSAGE value="06 Added editing method in service and end point in controller." />
+    <MESSAGE value="07 Created Asset entity, Dto, Mapper, Service and controller with findAll method. Added example data in import file." />
+    <option name="LAST_COMMIT_MESSAGE" value="07 Created Asset entity, Dto, Mapper, Service and controller with findAll method. Added example data in import file." />
   </component>
 </project>
