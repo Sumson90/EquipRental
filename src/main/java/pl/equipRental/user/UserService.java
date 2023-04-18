@@ -18,24 +18,24 @@ public class UserService {
     List<UserDto> findAll() {
         return userRepository.findAll()
                 .stream()
-                .map(UserMapper::toDto)
+                .map(UserMapper.INSTANCE::toDto)
                 .collect(Collectors.toList());
     }
 
     UserDto save(UserDto user) {
-        Optional<User> userBypPesel = userRepository.findByPesel((user.getPesel()));
-        userBypPesel.ifPresent(u ->
+        Optional<User> userByPesel = userRepository.findByPesel((user.getPesel()));
+        userByPesel.ifPresent(u ->
         {
             throw new DuplicatePeselException("Użytkownik z takim peselem już istnieje.");
         });
-        User userEntity = UserMapper.toEntity(user);
+        User userEntity = UserMapper.INSTANCE.toEntity(user);
         User savedUser = userRepository.save(userEntity);
-        return UserMapper.toDto(savedUser);
+        return UserMapper.INSTANCE.toDto(savedUser);
 
     }
 
     Optional<UserDto> findById(Long id) {
-        return userRepository.findById(id).map(UserMapper::toDto);
+        return userRepository.findById(id).map(UserMapper.INSTANCE::toDto);
     }
 
     UserDto update(UserDto user) {
@@ -44,10 +44,8 @@ public class UserService {
             if (!u.getId().equals(user.getId()))
                 throw new DuplicatePeselException("Użytkownik z takim peselem już istnieje.");
         });
-        User userEntity = UserMapper.toEntity(user);
+        User userEntity = UserMapper.INSTANCE.toEntity(user);
         User savedUser = userRepository.save(userEntity);
-        return UserMapper.toDto(savedUser);
+        return UserMapper.INSTANCE.toDto(savedUser);
     }
-
-
 }

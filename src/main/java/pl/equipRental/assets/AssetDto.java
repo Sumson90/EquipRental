@@ -12,4 +12,5 @@ public class AssetDto {
     private String serialNumber;
     private String category;
 
+
 }

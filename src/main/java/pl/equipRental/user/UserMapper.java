@@ -1,25 +1,17 @@
 package pl.equipRental.user;
 
+
+import org.mapstruct.Mapper;
+import org.mapstruct.Mapping;
+import org.mapstruct.factory.Mappers;
 import pl.equipRental.user.dto.UserDto;
 
-public class UserMapper {
+@Mapper
+public interface UserMapper {
+    UserMapper INSTANCE = Mappers.getMapper(UserMapper.class);
 
-    static UserDto toDto(User user){
-        UserDto dto = new UserDto();
-        dto.setId(user.getId());
-        dto.setFirstName(user.getFirstName());
-        dto.setLastName(user.getLastName());
-        dto.setPesel(user.getPesel());
-        return dto;
-    }
+    UserDto toDto(User user);
 
-    static User toEntity(UserDto user) {
-        User entity = new User();
-        entity.setId(user.getId());
-        entity.setFirstName(user.getFirstName());
-        entity.setLastName(user.getLastName());
-        entity.setPesel(user.getPesel());
-        return entity;
-    }
-
+    User toEntity(UserDto userDTO);
 }
+

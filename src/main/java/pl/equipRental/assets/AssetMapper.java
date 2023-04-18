@@ -1,14 +1,15 @@
 package pl.equipRental.assets;
 
+
 import lombok.AllArgsConstructor;
-import org.springframework.stereotype.Service;
+import org.springframework.stereotype.Component;
 import pl.equipRental.category.Category;
 import pl.equipRental.category.CategoryRepository;
 
 import java.util.Optional;
 
 @AllArgsConstructor
-@Service
+@Component
 public class AssetMapper {
     private final CategoryRepository categoryRepository;
 
@@ -35,3 +36,4 @@ public class AssetMapper {
     }
 
 }
+
