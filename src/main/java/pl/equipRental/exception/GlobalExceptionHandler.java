@@ -8,12 +8,19 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 @ControllerAdvice
 public class GlobalExceptionHandler {
 
-    @ExceptionHandler(value = {DuplicatePeselException.class})
+    @ExceptionHandler(value = DuplicatePeselException.class)
     public ResponseEntity<Object> handleDuplicatePeselException(DuplicatePeselException ex) {
 
         HttpStatus status = HttpStatus.CONFLICT;
         String errorMessage = ex.getMessage();
 
+        return new ResponseEntity<>(errorMessage, status);
+    }
+
+    @ExceptionHandler(value = DuplicateSerialNumberException.class)
+    public ResponseEntity<Object> handleDuplicateSerialNumberException(DuplicateSerialNumberException ex) {
+        HttpStatus status = HttpStatus.CONFLICT;
+        String errorMessage = ex.getMessage();
         return new ResponseEntity<>(errorMessage, status);
     }
 
@@ -25,5 +32,16 @@ public class GlobalExceptionHandler {
 
         return new ResponseEntity<>(errorMessage, status);
     }
+
+    @ExceptionHandler(value = BadRequestException.class)
+    public ResponseEntity<Object> handleBadRequestException(BadRequestException ex) {
+
+        HttpStatus status = HttpStatus.BAD_REQUEST;
+        String errorMessage = ex.getMessage();
+
+        return new ResponseEntity<>(errorMessage, status);
+    }
+
+
 }
 

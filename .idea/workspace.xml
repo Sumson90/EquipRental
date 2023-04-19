@@ -4,19 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1bfa504a-f59b-4520-a7c2-bfca4312a077" name="Changes" comment="07 Created Asset entity, Dto, Mapper, Service and controller with findAll method. Added example data in import file.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/equipRental/category/Category.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/equipRental/category/CategoryRepository.java" afterDir="false" />
+    <list default="true" id="1bfa504a-f59b-4520-a7c2-bfca4312a077" name="Changes" comment="08 Updated User mapper and service with MapStruct architecture. Added regex in user pesel jan.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/equipRental/category/CategoryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/equipRental/category/CategoryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/equipRental/exception/BadRequestException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/equipRental/exception/DuplicateSerialNumberException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/equipRental/assets/AssetDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/equipRental/assets/AssetDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/equipRental/assets/AssetMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/equipRental/assets/AssetMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/equipRental/assets/AssetController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/equipRental/assets/AssetController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/equipRental/assets/AssetRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/equipRental/assets/AssetRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/equipRental/assets/AssetService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/equipRental/assets/AssetService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/equipRental/exception/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/equipRental/exception/GlobalExceptionHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/equipRental/user/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/equipRental/user/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/equipRental/user/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/equipRental/user/UserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/equipRental/user/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/equipRental/user/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/equipRental/user/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/equipRental/user/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/equipRental/user/dto/UserDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/equipRental/user/dto/UserDto.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,7 +135,9 @@
       <workItem from="1681556560844" duration="4078000" />
       <workItem from="1681635273196" duration="4239000" />
       <workItem from="1681746856084" duration="3610000" />
-      <workItem from="1681806816335" duration="10385000" />
+      <workItem from="1681806816335" duration="11102000" />
+      <workItem from="1681897464009" duration="2162000" />
+      <workItem from="1681926946743" duration="2168000" />
     </task>
     <task id="LOCAL-00001" summary="01 Prepared main page and added configurations">
       <created>1681317566983</created>
@@ -195,7 +195,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681749803757</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="08 Updated User mapper and service with MapStruct architecture. Added regex in user pesel jan.">
+      <created>1681821478331</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1681821478331</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -221,6 +228,7 @@
     <MESSAGE value="05 Added saving method in service and end point in controller. Created exceptions package with GlobalExceptionHandler." />
     <MESSAGE value="06 Added editing method in service and end point in controller." />
     <MESSAGE value="07 Created Asset entity, Dto, Mapper, Service and controller with findAll method. Added example data in import file." />
-    <option name="LAST_COMMIT_MESSAGE" value="07 Created Asset entity, Dto, Mapper, Service and controller with findAll method. Added example data in import file." />
+    <MESSAGE value="08 Updated User mapper and service with MapStruct architecture. Added regex in user pesel jan." />
+    <option name="LAST_COMMIT_MESSAGE" value="08 Updated User mapper and service with MapStruct architecture. Added regex in user pesel jan." />
   </component>
 </project>
