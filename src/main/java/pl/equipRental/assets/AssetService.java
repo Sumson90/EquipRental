@@ -21,13 +21,39 @@ public class AssetService {
                 .collect(Collectors.toList());
     }
 
-    AssetDto save (AssetDto asset){
+    List<AssetDto> findAllByNameOrSerialNumber(String text) {
+        return assetRepository.findAllByNameOrSerialNumber(text)
+                .stream()
+                .map(assetMapper::toDto)
+                .collect(Collectors.toList());
+    }
+
+    Optional<AssetDto> findById(Long id) {
+        return assetRepository.findById(id).map(assetMapper::toDto);
+    }
+
+    AssetDto save(AssetDto asset) {
         Optional<Asset> assetBySerialNo = assetRepository.findBySerialNumber(asset.getSerialNumber());
         assetBySerialNo.ifPresent(a -> {
             throw new DuplicateSerialNumberException("Duplikat numeru seryjnego");
         });
+        return mapAndSave(asset);
+    }
+
+    AssetDto update(AssetDto asset) {
+        Optional<Asset> assetBySerialNo = assetRepository.findBySerialNumber(asset.getSerialNumber());
+        assetBySerialNo.ifPresent(a -> {
+            if (!a.getId().equals(asset.getId())) {
+                throw new DuplicateSerialNumberException("Duplikat numeru seryjnego");
+            }
+        });
+        return mapAndSave(asset);
+    }
+
+    private AssetDto mapAndSave(AssetDto asset) {
         Asset assetEntity = assetMapper.toEntity(asset);
         Asset savedAsset = assetRepository.save(assetEntity);
         return assetMapper.toDto(savedAsset);
     }
+
 }

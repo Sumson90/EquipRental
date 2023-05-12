@@ -28,11 +28,10 @@ public class UserService {
         {
             throw new DuplicatePeselException("Użytkownik z takim peselem już istnieje.");
         });
-        User userEntity = UserMapper.INSTANCE.toEntity(user);
-        User savedUser = userRepository.save(userEntity);
-        return UserMapper.INSTANCE.toDto(savedUser);
+        return getUserDto(user);
 
     }
+
 
     Optional<UserDto> findById(Long id) {
         return userRepository.findById(id).map(UserMapper.INSTANCE::toDto);
@@ -44,6 +43,10 @@ public class UserService {
             if (!u.getId().equals(user.getId()))
                 throw new DuplicatePeselException("Użytkownik z takim peselem już istnieje.");
         });
+        return getUserDto(user);
+    }
+
+    private UserDto getUserDto(UserDto user) {
         User userEntity = UserMapper.INSTANCE.toEntity(user);
         User savedUser = userRepository.save(userEntity);
         return UserMapper.INSTANCE.toDto(savedUser);
