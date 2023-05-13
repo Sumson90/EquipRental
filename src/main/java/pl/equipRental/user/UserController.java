@@ -41,6 +41,10 @@ public class UserController {
 
 
     }
+    @GetMapping("/{id}/assignments")
+    public List<UserAssignmentDto> getUserAssignments(@PathVariable Long id) {
+        return userService.getUserAssignments(id);
+    }
 
     @GetMapping("/{id}")
     public ResponseEntity<UserDto> findById(@PathVariable Long id) {

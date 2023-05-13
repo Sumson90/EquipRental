@@ -3,7 +3,11 @@ package pl.equipRental.user;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Pattern;
 import lombok.*;
+import pl.equipRental.assignment.Assignment;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Objects;
 
 
 @EqualsAndHashCode
@@ -22,6 +26,9 @@ public class User{
     @Column(unique = true)
     @Pattern(regexp="\\d{11}", message="PESEL musi składać się z 11 cyfr.")
     private String pesel;
+
+    @OneToMany(mappedBy = "user")
+    private List<Assignment> assignments = new ArrayList<>();
 
     public Long getId() {
         return id;
@@ -53,5 +60,26 @@ public class User{
 
     public void setPesel(String pesel) {
         this.pesel = pesel;
+    }
+
+    public List<Assignment> getAssignments() {
+        return assignments;
+    }
+
+    public void setAssignments(List<Assignment> assignments) {
+        this.assignments = assignments;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        User user = (User) o;
+        return Objects.equals(id, user.id) && Objects.equals(firstName, user.firstName) && Objects.equals(lastName, user.lastName) && Objects.equals(pesel, user.pesel) && Objects.equals(assignments, user.assignments);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, firstName, lastName, pesel, assignments);
     }
 }
