@@ -6,6 +6,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
+import pl.equipRental.assets.dto.AssetAssignmentDto;
 import pl.equipRental.exception.BadRequestException;
 
 import java.net.URI;
@@ -57,6 +58,10 @@ public class AssetController {
         return ResponseEntity.ok(updatedAsset);
     }
 
+    @GetMapping("/{id}/assignments")
+    public List<AssetAssignmentDto> getAssetAssignments(@PathVariable Long id) {
+        return assetService.getAssetAssignments(id);
+    }
 
 
 }

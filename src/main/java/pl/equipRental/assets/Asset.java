@@ -2,7 +2,11 @@ package pl.equipRental.assets;
 
 import jakarta.persistence.*;
 import lombok.*;
+import pl.equipRental.assignment.Assignment;
 import pl.equipRental.category.Category;
+
+import java.util.ArrayList;
+import java.util.List;
 
 @ToString
 @EqualsAndHashCode
@@ -23,6 +27,8 @@ public class Asset {
     @ManyToOne
     @JoinColumn(name = "category_id")
     private Category category;
+    @OneToMany(mappedBy = "asset")
+    private List<Assignment> assignments = new ArrayList<>();
 
 
 }

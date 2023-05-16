@@ -4,14 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1bfa504a-f59b-4520-a7c2-bfca4312a077" name="Changes" comment="10 Add logic for editing assets.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/equipRental/assignment/Assignment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/equipRental/exception/UserNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/equipRental/user/UserAssignmentDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/equipRental/user/UserAssignmentMapper.java" afterDir="false" />
+    <list default="true" id="1bfa504a-f59b-4520-a7c2-bfca4312a077" name="Changes" comment="10 Add Assignment with test data and updated user logic.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/equipRental/assets/dto/AssetAssignmentDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/equipRental/user/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/equipRental/user/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/equipRental/user/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/equipRental/user/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/equipRental/assets/Asset.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/equipRental/assets/Asset.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -142,7 +138,10 @@
       <workItem from="1682596863462" duration="1923000" />
       <workItem from="1683891243920" duration="1676000" />
       <workItem from="1683913705847" duration="30000" />
-      <workItem from="1684007679128" duration="777000" />
+      <workItem from="1684007679128" duration="1183000" />
+      <workItem from="1684052772153" duration="63000" />
+      <workItem from="1684052869883" duration="85000" />
+      <workItem from="1684248234995" duration="300000" />
     </task>
     <task id="LOCAL-00001" summary="01 Prepared main page and added configurations">
       <created>1681317566983</created>
@@ -221,7 +220,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683892905557</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="10 Add Assignment with test data and updated user logic.">
+      <created>1684008751612</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1684008751612</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -250,6 +256,7 @@
     <MESSAGE value="08 Updated User mapper and service with MapStruct architecture. Added regex in user pesel jan." />
     <MESSAGE value="09 Add logic for creating assets." />
     <MESSAGE value="10 Add logic for editing assets." />
-    <option name="LAST_COMMIT_MESSAGE" value="10 Add logic for editing assets." />
+    <MESSAGE value="10 Add Assignment with test data and updated user logic." />
+    <option name="LAST_COMMIT_MESSAGE" value="10 Add Assignment with test data and updated user logic." />
   </component>
 </project>
