@@ -4,19 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1bfa504a-f59b-4520-a7c2-bfca4312a077" name="Changes" comment="07 Created Asset entity, Dto, Mapper, Service and controller with findAll method. Added example data in import file.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/equipRental/category/Category.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/equipRental/category/CategoryRepository.java" afterDir="false" />
+    <list default="true" id="1bfa504a-f59b-4520-a7c2-bfca4312a077" name="Changes" comment="10 Added history of renting equipment.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/equipRental/assignment/AssignmentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/equipRental/assignment/AssignmentDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/equipRental/assignment/AssignmentMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/equipRental/assignment/AssignmentRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/equipRental/assignment/AssignmentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/equipRental/exception/InvalidAssignmentException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/equipRental/assets/AssetDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/equipRental/assets/AssetDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/equipRental/assets/AssetMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/equipRental/assets/AssetMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/equipRental/assets/AssetRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/equipRental/assets/AssetRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/equipRental/user/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/equipRental/user/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/equipRental/user/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/equipRental/user/UserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/equipRental/user/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/equipRental/user/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/equipRental/user/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/equipRental/user/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/equipRental/user/dto/UserDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/equipRental/user/dto/UserDto.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,7 +132,22 @@
       <workItem from="1681556560844" duration="4078000" />
       <workItem from="1681635273196" duration="4239000" />
       <workItem from="1681746856084" duration="3610000" />
-      <workItem from="1681806816335" duration="10385000" />
+      <workItem from="1681806816335" duration="11102000" />
+      <workItem from="1681897464009" duration="2162000" />
+      <workItem from="1681926946743" duration="2556000" />
+      <workItem from="1681933537957" duration="1319000" />
+      <workItem from="1681977472974" duration="5904000" />
+      <workItem from="1682062302413" duration="1549000" />
+      <workItem from="1682344645596" duration="1571000" />
+      <workItem from="1682596863462" duration="1923000" />
+      <workItem from="1683891243920" duration="1676000" />
+      <workItem from="1683913705847" duration="30000" />
+      <workItem from="1684007679128" duration="1183000" />
+      <workItem from="1684052772153" duration="63000" />
+      <workItem from="1684052869883" duration="85000" />
+      <workItem from="1684248234995" duration="1420000" />
+      <workItem from="1684318607593" duration="50000" />
+      <workItem from="1684436567228" duration="675000" />
     </task>
     <task id="LOCAL-00001" summary="01 Prepared main page and added configurations">
       <created>1681317566983</created>
@@ -195,7 +205,42 @@
       <option name="project" value="LOCAL" />
       <updated>1681749803757</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="08 Updated User mapper and service with MapStruct architecture. Added regex in user pesel jan.">
+      <created>1681821478331</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1681821478331</updated>
+    </task>
+    <task id="LOCAL-00010" summary="09 Add logic for creating assets.">
+      <created>1681929165937</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1681929165937</updated>
+    </task>
+    <task id="LOCAL-00011" summary="10 Add logic for editing assets.">
+      <created>1683892905554</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1683892905557</updated>
+    </task>
+    <task id="LOCAL-00012" summary="10 Add Assignment with test data and updated user logic.">
+      <created>1684008751612</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1684008751612</updated>
+    </task>
+    <task id="LOCAL-00013" summary="10 Added history of renting equipment.">
+      <created>1684248807614</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1684248807615</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -221,6 +266,11 @@
     <MESSAGE value="05 Added saving method in service and end point in controller. Created exceptions package with GlobalExceptionHandler." />
     <MESSAGE value="06 Added editing method in service and end point in controller." />
     <MESSAGE value="07 Created Asset entity, Dto, Mapper, Service and controller with findAll method. Added example data in import file." />
-    <option name="LAST_COMMIT_MESSAGE" value="07 Created Asset entity, Dto, Mapper, Service and controller with findAll method. Added example data in import file." />
+    <MESSAGE value="08 Updated User mapper and service with MapStruct architecture. Added regex in user pesel jan." />
+    <MESSAGE value="09 Add logic for creating assets." />
+    <MESSAGE value="10 Add logic for editing assets." />
+    <MESSAGE value="10 Add Assignment with test data and updated user logic." />
+    <MESSAGE value="10 Added history of renting equipment." />
+    <option name="LAST_COMMIT_MESSAGE" value="10 Added history of renting equipment." />
   </component>
 </project>

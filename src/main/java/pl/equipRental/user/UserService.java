@@ -1,6 +1,6 @@
 package pl.equipRental.user;
-
 import lombok.AllArgsConstructor;
+import pl.equipRental.exception.UserNotFoundException;
 import org.springframework.stereotype.Service;
 import pl.equipRental.exception.DuplicatePeselException;
 import pl.equipRental.user.dto.UserDto;
@@ -28,11 +28,10 @@ public class UserService {
         {
             throw new DuplicatePeselException("Użytkownik z takim peselem już istnieje.");
         });
-        User userEntity = UserMapper.INSTANCE.toEntity(user);
-        User savedUser = userRepository.save(userEntity);
-        return UserMapper.INSTANCE.toDto(savedUser);
+        return getUserDto(user);
 
     }
+
 
     Optional<UserDto> findById(Long id) {
         return userRepository.findById(id).map(UserMapper.INSTANCE::toDto);
@@ -44,8 +43,20 @@ public class UserService {
             if (!u.getId().equals(user.getId()))
                 throw new DuplicatePeselException("Użytkownik z takim peselem już istnieje.");
         });
+        return getUserDto(user);
+    }
+
+    private UserDto getUserDto(UserDto user) {
         User userEntity = UserMapper.INSTANCE.toEntity(user);
         User savedUser = userRepository.save(userEntity);
         return UserMapper.INSTANCE.toDto(savedUser);
+    }
+    List<UserAssignmentDto> getUserAssignments(Long userId) {
+        return userRepository.findById(userId)
+                .map(User::getAssignments)
+                .orElseThrow(UserNotFoundException::new)
+                .stream()
+                .map(UserAssignmentMapper::toDto)
+                .collect(Collectors.toList());
     }
 }
