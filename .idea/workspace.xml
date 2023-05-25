@@ -4,14 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1bfa504a-f59b-4520-a7c2-bfca4312a077" name="Changes" comment="10 Added history of renting equipment.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/equipRental/assignment/AssignmentController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/equipRental/assignment/AssignmentDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/equipRental/assignment/AssignmentMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/equipRental/assignment/AssignmentRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/equipRental/assignment/AssignmentService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/equipRental/exception/InvalidAssignmentException.java" afterDir="false" />
+    <list default="true" id="1bfa504a-f59b-4520-a7c2-bfca4312a077" name="Changes" comment="11 Logic for renting equipment">
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/equipRental/exception/AssignmentAlreadyFinishedException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/equipRental/exception/AssignmentNotFoundException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/equipRental/assignment/AssignmentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/equipRental/assignment/AssignmentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/equipRental/assignment/AssignmentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/equipRental/assignment/AssignmentService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -147,7 +145,8 @@
       <workItem from="1684052869883" duration="85000" />
       <workItem from="1684248234995" duration="1420000" />
       <workItem from="1684318607593" duration="50000" />
-      <workItem from="1684436567228" duration="675000" />
+      <workItem from="1684436567228" duration="1092000" />
+      <workItem from="1685002278672" duration="2535000" />
     </task>
     <task id="LOCAL-00001" summary="01 Prepared main page and added configurations">
       <created>1681317566983</created>
@@ -240,7 +239,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684248807615</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="11 Logic for renting equipment">
+      <created>1684437605905</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1684437605905</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -271,6 +277,7 @@
     <MESSAGE value="10 Add logic for editing assets." />
     <MESSAGE value="10 Add Assignment with test data and updated user logic." />
     <MESSAGE value="10 Added history of renting equipment." />
-    <option name="LAST_COMMIT_MESSAGE" value="10 Added history of renting equipment." />
+    <MESSAGE value="11 Logic for renting equipment" />
+    <option name="LAST_COMMIT_MESSAGE" value="11 Logic for renting equipment" />
   </component>
 </project>

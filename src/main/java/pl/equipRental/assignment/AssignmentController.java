@@ -9,6 +9,8 @@ import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 import pl.equipRental.exception.InvalidAssignmentException;
 
 import java.net.URI;
+import java.time.LocalDateTime;
+
 @AllArgsConstructor
 @RestController
 @RequestMapping("/api/assignments")
@@ -31,5 +33,10 @@ public class AssignmentController {
                 .buildAndExpand(savedAssignment.getId())
                 .toUri();
         return ResponseEntity.created(location).body(savedAssignment);
+    }
+    @PostMapping("/{id}/end")
+    public ResponseEntity<?> finishAssignment(@PathVariable Long id) {
+        LocalDateTime endDate = assignmentService.finishAssignment(id);
+        return ResponseEntity.accepted().body(endDate);
     }
 }

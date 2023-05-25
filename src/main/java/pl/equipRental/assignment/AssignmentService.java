@@ -1,9 +1,13 @@
 package pl.equipRental.assignment;
 
+import jakarta.transaction.Transactional;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 import pl.equipRental.assets.Asset;
 import pl.equipRental.assets.AssetRepository;
+
+import pl.equipRental.exception.AssignmentNotFoundException;
+import pl.equipRental.exception.AssignmentAlreadyFinishedException;
 import pl.equipRental.exception.InvalidAssignmentException;
 import pl.equipRental.user.User;
 import pl.equipRental.user.UserRepository;
@@ -34,5 +38,16 @@ public class AssignmentService {
                 new InvalidAssignmentException("Brak wyposażenia z id: " + assetId)));
         assignment.setStart(LocalDateTime.now());
         return AssignmentMapper.toDto(assignmentRepository.save(assignment));
+    }
+    @Transactional
+    public LocalDateTime finishAssignment(Long assignmentId) {
+        Optional<Assignment> assignment = assignmentRepository.findById(assignmentId);
+        Assignment assignmentEntity = assignment.orElseThrow(AssignmentNotFoundException::new);
+        if (assignmentEntity.getEnd() != null) {
+            throw new AssignmentAlreadyFinishedException();
+        } else {
+            assignmentEntity.setEnd(LocalDateTime.now());
+        }
+        return assignmentEntity.getEnd();
     }
 }
